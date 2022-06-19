@@ -23,10 +23,16 @@ class DataCollection {
     return this.model.create(record);
   }
 
-  update(id, data) {
-    return this.model.findOne({ where: { id } })
-      .then(record => record.update(data));
-  }
+  async update(obj) {
+    try {
+        let record = await this.model.findOne({ where: { id: data_id } });
+        let updated = await record.update(obj);
+        return updated;
+    }
+    catch (e) {
+        console.log("this error happen when updated this model", this.model);
+    }
+}
 
   delete(id) {
     return this.model.destroy({ where: { id }});
