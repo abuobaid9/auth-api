@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --coverage --verbose",
+    "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development nodemon index.js",
-    "start": "NODE_ENV=production node index.js"
+    "test": "NODE_ENV=test jest --coverage",
+    "init:config": "sequelize init:config",
+    "db:create": "sequelize db:create",
+    "watch": "NODE_ENV=development nodemon index.js",
+    "test:watch": "NODE_ENV=test jest --watchAll"
   },
+  "jest": {     "testEnvironment": "node"   },
   "keywords": [],
   "author": "",
   "license": "ISC",

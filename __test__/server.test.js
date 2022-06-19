@@ -8,10 +8,6 @@ const mockRequest = supertest(server);
 
 const SECRET=process.env.SECRET || "anas";
 
-
-
-
-
 let userInfo = {
   testUser: { username: 'user', password: 'password', role: 'admin' },
 };
