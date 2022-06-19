@@ -11,10 +11,10 @@ let sequelizeOptions =
     ?
     {
       dialectOptions: {
-        ssl: {
-          require: true,
-          rejectUnauthorized: false,
-        },
+        // ssl: {
+        //   require: true,
+        //   rejectUnauthorized: false,
+        // },
       },
     } : {};
 

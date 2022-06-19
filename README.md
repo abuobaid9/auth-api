@@ -6,7 +6,7 @@
 
 ## Links
 
-- [Heroku App](https://anas-basic-auth.herokuapp.com/)
+- [Heroku App](https://anas-auth-server.herokuapp.com/)
 
 - [Pull Requset](https://github.com/abuobaid9/auth-api/pulls?q=is%3Apr+is%3Aclosed)
 

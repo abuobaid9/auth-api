@@ -25,6 +25,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+app.get('/', (req, res) => {
+    res.status(200).send('Go to the food path or cloth path ');
+});
 app.use(authRoutes);
 app.use(logger);
 app.use('/api/v1', v1Routes);
